@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3897A6DA2505D84200E33B04 /* LSIInternalRevenueService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3897A6D92505D84200E33B04 /* LSIInternalRevenueService.m */; };
 		BD4087FB225CE26300B9C013 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4087FA225CE26300B9C013 /* AppDelegate.m */; };
 		BD408801225CE26300B9C013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4087FF225CE26300B9C013 /* Main.storyboard */; };
 		BD408803225CE26400B9C013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD408802225CE26400B9C013 /* Assets.xcassets */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3897A6D82505D84200E33B04 /* LSIInternalRevenueService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIInternalRevenueService.h; sourceTree = "<group>"; };
+		3897A6D92505D84200E33B04 /* LSIInternalRevenueService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIInternalRevenueService.m; sourceTree = "<group>"; };
 		BD4087F6225CE26300B9C013 /* KVO KVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KVO KVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4087F9225CE26300B9C013 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD4087FA225CE26300B9C013 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +51,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3897A6DB2505D84800E33B04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD40880F225CE27500B9C013 /* LSIEmployee.h */,
+				BD408813225CE27500B9C013 /* LSIEmployee.m */,
+				BD408811225CE27500B9C013 /* LSIDepartment.h */,
+				BD408812225CE27500B9C013 /* LSIDepartment.m */,
+				3897A6D82505D84200E33B04 /* LSIInternalRevenueService.h */,
+				3897A6D92505D84200E33B04 /* LSIInternalRevenueService.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3897A6DC2505D85000E33B04 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD4087FC225CE26300B9C013 /* ViewController.h */,
+				BD408818225CE28900B9C013 /* ViewController.m */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		3897A6DD2505D85C00E33B04 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BD4087FF225CE26300B9C013 /* Main.storyboard */,
+				BD408804225CE26400B9C013 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3897A6DE2505D86400E33B04 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD4087F9225CE26300B9C013 /* AppDelegate.h */,
+				BD4087FA225CE26300B9C013 /* AppDelegate.m */,
+				BD408802225CE26400B9C013 /* Assets.xcassets */,
+				BD408807225CE26400B9C013 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3897A6DF2505D88E00E33B04 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD408810225CE27500B9C013 /* LSIHRController.h */,
+				BD408814225CE27500B9C013 /* LSIHRController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		BD4087ED225CE26300B9C013 = {
 			isa = PBXGroup;
 			children = (
@@ -67,21 +121,12 @@
 		BD4087F8225CE26300B9C013 /* KVO KVC */ = {
 			isa = PBXGroup;
 			children = (
-				BD4087F9225CE26300B9C013 /* AppDelegate.h */,
-				BD4087FA225CE26300B9C013 /* AppDelegate.m */,
-				BD4087FC225CE26300B9C013 /* ViewController.h */,
-				BD408818225CE28900B9C013 /* ViewController.m */,
-				BD408811225CE27500B9C013 /* LSIDepartment.h */,
-				BD408812225CE27500B9C013 /* LSIDepartment.m */,
-				BD40880F225CE27500B9C013 /* LSIEmployee.h */,
-				BD408813225CE27500B9C013 /* LSIEmployee.m */,
-				BD408810225CE27500B9C013 /* LSIHRController.h */,
-				BD408814225CE27500B9C013 /* LSIHRController.m */,
-				BD4087FF225CE26300B9C013 /* Main.storyboard */,
-				BD408802225CE26400B9C013 /* Assets.xcassets */,
-				BD408804225CE26400B9C013 /* LaunchScreen.storyboard */,
-				BD408807225CE26400B9C013 /* Info.plist */,
 				BD408808225CE26400B9C013 /* main.m */,
+				3897A6DB2505D84800E33B04 /* Model */,
+				3897A6DF2505D88E00E33B04 /* Model Controller */,
+				3897A6DC2505D85000E33B04 /* View Controller */,
+				3897A6DE2505D86400E33B04 /* Resources */,
+				3897A6DD2505D85C00E33B04 /* Storyboards */,
 			);
 			path = "KVO KVC";
 			sourceTree = "<group>";
@@ -160,6 +205,7 @@
 				BD408809225CE26400B9C013 /* main.m in Sources */,
 				BD408817225CE27500B9C013 /* LSIHRController.m in Sources */,
 				BD408815225CE27500B9C013 /* LSIDepartment.m in Sources */,
+				3897A6DA2505D84200E33B04 /* LSIInternalRevenueService.m in Sources */,
 				BD408816225CE27500B9C013 /* LSIEmployee.m in Sources */,
 				BD4087FB225CE26300B9C013 /* AppDelegate.m in Sources */,
 			);
@@ -305,7 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = "KVO KVC/Info.plist";
+				INFOPLIST_FILE = "KVO KVC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = "KVO KVC/Info.plist";
+				INFOPLIST_FILE = "KVO KVC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

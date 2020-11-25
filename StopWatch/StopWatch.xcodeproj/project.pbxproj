@@ -45,6 +45,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		386720212506CEB600DFDB65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDAD0470237B13F1005C1360 /* AppDelegate.h */,
+				BDAD0471237B13F1005C1360 /* AppDelegate.m */,
+				BDAD0473237B13F1005C1360 /* SceneDelegate.h */,
+				BDAD047C237B13F2005C1360 /* Assets.xcassets */,
+				BDAD0481237B13F2005C1360 /* Info.plist */,
+				BDAD0474237B13F1005C1360 /* SceneDelegate.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		386720222506CEC500DFDB65 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BDAD048B237B1409005C1360 /* Main.storyboard */,
+				BDAD047E237B13F2005C1360 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		386720232506CECE00DFDB65 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDAD0476237B13F1005C1360 /* ViewController.h */,
+				BDAD048E237B14AC005C1360 /* ViewController.m */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		386720242506CED700DFDB65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		386720252506CEDC00DFDB65 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		386720262506CEE500DFDB65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDAD0489237B1409005C1360 /* LSIStopWatch.h */,
+				BDAD048A237B1409005C1360 /* LSIStopWatch.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BDAD0464237B13F1005C1360 = {
 			isa = PBXGroup;
 			children = (
@@ -64,19 +118,13 @@
 		BDAD046F237B13F1005C1360 /* StopWatch */ = {
 			isa = PBXGroup;
 			children = (
-				BDAD0470237B13F1005C1360 /* AppDelegate.h */,
-				BDAD0471237B13F1005C1360 /* AppDelegate.m */,
-				BDAD0473237B13F1005C1360 /* SceneDelegate.h */,
-				BDAD0474237B13F1005C1360 /* SceneDelegate.m */,
-				BDAD0476237B13F1005C1360 /* ViewController.h */,
-				BDAD048E237B14AC005C1360 /* ViewController.m */,
-				BDAD0489237B1409005C1360 /* LSIStopWatch.h */,
-				BDAD048A237B1409005C1360 /* LSIStopWatch.m */,
-				BDAD048B237B1409005C1360 /* Main.storyboard */,
-				BDAD047C237B13F2005C1360 /* Assets.xcassets */,
-				BDAD047E237B13F2005C1360 /* LaunchScreen.storyboard */,
-				BDAD0481237B13F2005C1360 /* Info.plist */,
 				BDAD0482237B13F2005C1360 /* main.m */,
+				386720262506CEE500DFDB65 /* Model */,
+				386720252506CEDC00DFDB65 /* Model Controller */,
+				386720242506CED700DFDB65 /* View */,
+				386720232506CECE00DFDB65 /* View Controller */,
+				386720222506CEC500DFDB65 /* Storyboards */,
+				386720212506CEB600DFDB65 /* Resources */,
 			);
 			path = StopWatch;
 			sourceTree = "<group>";
@@ -289,7 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = StopWatch/Info.plist;
+				INFOPLIST_FILE = StopWatch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = StopWatch/Info.plist;
+				INFOPLIST_FILE = StopWatch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
